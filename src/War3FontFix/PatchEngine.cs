@@ -19,6 +19,8 @@ namespace War3FontFix
             if (revision > 0)
                 foreach (var patch in profile.Sites(revision))
                     Replace(result, patch.fileOffset, Bytes.FromHex(patch.replacement), Bytes.FromHex(patch.original));
+            // Only a fully fingerprinted revision may lose its generated PE section.
+            Array.Resize(ref result, profile.fileLength);
             if (!Bytes.SameHash(Bytes.Hash(result), profile.originalSha256))
                 throw new InvalidDataException("Restored file failed full SHA-256 verification.");
             return result;
@@ -28,6 +30,7 @@ namespace War3FontFix
         {
             // Restore any recognized revision first, so upgrades do not depend on edit ordering across releases.
             byte[] result = Restore(source, profile);
+            Array.Resize(ref result, profile.RevisionLength(profile.Current));
             foreach (var patch in profile.Sites(profile.currentRevision))
                 Replace(result, patch.fileOffset, Bytes.FromHex(patch.original), Bytes.FromHex(patch.replacement));
             if (!Bytes.SameHash(Bytes.Hash(result), profile.Current.sha256))

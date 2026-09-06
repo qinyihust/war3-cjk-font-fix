@@ -20,6 +20,8 @@ namespace War3FontFix
     public sealed class PatchRevision
     {
         public int revision { get; set; }
+        // Zero means the original length (schema 1 compatibility).
+        public int fileLength { get; set; }
         public string sha256 { get; set; }
         public string[] patchIds { get; set; }
     }
@@ -37,6 +39,7 @@ namespace War3FontFix
         public PatchRevision[] revisions { get; set; }
 
         public PatchRevision Current { get { return revisions.Single(r => r.revision == currentRevision); } }
+        public int RevisionLength(PatchRevision revision) { return revision.fileLength == 0 ? fileLength : revision.fileLength; }
 
         public static PatchProfile Parse(string json)
         {
@@ -48,7 +51,7 @@ namespace War3FontFix
 
         public void Validate()
         {
-            if (schemaVersion != 1 || String.IsNullOrWhiteSpace(id) || String.IsNullOrWhiteSpace(gameVersion)
+            if ((schemaVersion != 1 && schemaVersion != 2) || String.IsNullOrWhiteSpace(id) || String.IsNullOrWhiteSpace(gameVersion)
                 || fileLength <= 0 || currentRevision <= 0 || !Bytes.IsHash(originalSha256))
                 throw new InvalidDataException("Invalid patch profile identity.");
             if (String.IsNullOrWhiteSpace(backupFileName) || backupFileName.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0
@@ -58,6 +61,12 @@ namespace War3FontFix
             if (patches == null || patches.Length == 0 || revisions == null || revisions.Length == 0)
                 throw new InvalidDataException("Profile has no patches or revisions.");
 
+            foreach (var revision in revisions)
+                if (revision == null || revision.fileLength < 0 || (schemaVersion == 1 && revision.fileLength != 0)
+                    || RevisionLength(revision) < fileLength || (long)RevisionLength(revision) > (long)fileLength + 1024 * 1024)
+                    throw new InvalidDataException("Invalid revision file length.");
+            int maximumLength = revisions.Max(r => RevisionLength(r));
+
             var ids = new HashSet<string>(StringComparer.Ordinal);
             var ranges = new List<Tuple<int, int>>();
             foreach (var patch in patches)
@@ -66,8 +75,11 @@ namespace War3FontFix
                     throw new InvalidDataException("Duplicate or empty patch id.");
                 byte[] before = Bytes.FromHex(patch.original), after = Bytes.FromHex(patch.replacement);
                 if (before.Length == 0 || before.Length != after.Length || patch.fileOffset < 0 || patch.rva < 0
-                    || (long)patch.fileOffset + before.Length > fileLength)
+                    || (long)patch.fileOffset + before.Length > maximumLength)
                     throw new InvalidDataException("Patch length or file offset is invalid.");
+                for (int i = 0; i < before.Length; i++)
+                    if ((long)patch.fileOffset + i >= fileLength && before[i] != 0)
+                        throw new InvalidDataException("Appended patch space must have a zero original image.");
                 int end = patch.fileOffset + before.Length;
                 if (ranges.Any(r => patch.fileOffset < r.Item2 && end > r.Item1))
                     throw new InvalidDataException("Patch sites overlap.");
@@ -82,7 +94,8 @@ namespace War3FontFix
                     || !Bytes.IsHash(revision.sha256) || !hashes.Add(revision.sha256)
                     || revision.patchIds == null || revision.patchIds.Length == 0
                     || revision.patchIds.Distinct(StringComparer.Ordinal).Count() != revision.patchIds.Length
-                    || revision.patchIds.Any(p => p == null || !ids.Contains(p)))
+                    || revision.patchIds.Any(p => p == null || !ids.Contains(p))
+                    || patches.Where(p => revision.patchIds.Contains(p.id)).Any(p => (long)p.fileOffset + p.original.Length / 2 > RevisionLength(revision)))
                     throw new InvalidDataException("Invalid patch revision.");
             }
             if (!revisionIds.Contains(currentRevision)) throw new InvalidDataException("Current revision is missing.");
@@ -90,10 +103,9 @@ namespace War3FontFix
 
         public int Identify(string hash, long length)
         {
-            if (length != fileLength) return -1;
-            if (Bytes.SameHash(hash, originalSha256)) return 0;
+            if (length == fileLength && Bytes.SameHash(hash, originalSha256)) return 0;
             foreach (var revision in revisions)
-                if (Bytes.SameHash(hash, revision.sha256)) return revision.revision;
+                if (length == RevisionLength(revision) && Bytes.SameHash(hash, revision.sha256)) return revision.revision;
             return -1;
         }
 

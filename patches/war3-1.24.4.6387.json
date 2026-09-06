@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 2,
+  "id": "war3-1.24.4.6387",
+  "gameVersion": "1.24.4.6387",
+  "currentRevision": 2,
+  "fileLength": 12140544,
+  "originalSha256": "5F7D8B25005BC12F8453839474EB37ADE8869ABA0570EAD2B76B6A7979C904CC",
+  "backupFileName": "Game.dll.before-fontfix-12446387.bak",
+  "patches": [
+    {
+      "id": "pe-cjk-section",
+      "fileOffset": 728,
+      "rva": 728,
+      "original": "00000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "replacement": "2E636A6B00000000800000000040BD00001000000040B90000000000000000000000000020000060"
+    },
+    {
+      "id": "pe-section-count",
+      "fileOffset": 286,
+      "rva": 286,
+      "original": "0500",
+      "replacement": "0600"
+    },
+    {
+      "id": "pe-image-size",
+      "fileOffset": 360,
+      "rva": 360,
+      "original": "0040BD00",
+      "replacement": "0050BD00"
+    },
+    {
+      "id": "pe-code-size",
+      "fileOffset": 308,
+      "rva": 308,
+      "original": "00E08700",
+      "replacement": "00F08700"
+    },
+    {
+      "id": "glyph-allocation-retry",
+      "fileOffset": 8152089,
+      "rva": 8152089,
+      "original": "0F84ED000000",
+      "replacement": "0F849DFFFFFF"
+    },
+    {
+      "id": "utf8-defer-advance",
+      "fileOffset": 8155364,
+      "rva": 8155364,
+      "original": "7502",
+      "replacement": "EB02"
+    },
+    {
+      "id": "utf8-control-sequence",
+      "fileOffset": 8155450,
+      "rva": 8155450,
+      "original": "0F84B5000000",
+      "replacement": "909090909090"
+    },
+    {
+      "id": "utf8-accepted-character",
+      "fileOffset": 8155631,
+      "rva": 8155631,
+      "original": "7404",
+      "replacement": "9090"
+    },
+    {
+      "id": "utf8-newline-advance",
+      "fileOffset": 8155653,
+      "rva": 8155653,
+      "original": "7416",
+      "replacement": "9090"
+    },
+    {
+      "id": "utf8-narrow-line-progress",
+      "fileOffset": 8155671,
+      "rva": 8155671,
+      "original": "7404",
+      "replacement": "9090"
+    },
+    {
+      "id": "batch-rebuild-stub",
+      "fileOffset": 12140544,
+      "rva": 12402688,
+      "original": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "replacement": "9C608BF98B772485F67E2483BE80000000007411C78680000000000000008BCEE8BB3ABFFF8B471C03C68B7004EBD8619DE94A28BFFF"
+    },
+    {
+      "id": "atlas-clear-stub",
+      "fileOffset": 12140608,
+      "rva": 12402752,
+      "original": "000000000000000000000000000000000000000000000000000000000000000000",
+      "replacement": "9C6068000004006A00FF7304E811D9C0FF83C40C619D8B88B0010000E946E4BEFF"
+    },
+    {
+      "id": "batch-rebuild-hook",
+      "fileOffset": 8154371,
+      "rva": 8154371,
+      "original": "E878FBFFFF",
+      "replacement": "E8F8D24000"
+    },
+    {
+      "id": "atlas-clear-hook",
+      "fileOffset": 8135841,
+      "rva": 8135841,
+      "original": "8B88B0010000",
+      "replacement": "E99A1B410090"
+    },
+    {
+      "id": "atlas-copy-live-glyphs",
+      "fileOffset": 8135947,
+      "rva": 8135947,
+      "original": "0F84E0000000",
+      "replacement": "909090909090"
+    }
+  ],
+  "revisions": [
+    {
+      "revision": 2,
+      "sha256": "FD9773CAC34EB6BA2200823B9E9ECBD447177C8FE330844C0EC1D54B84FA5423",
+      "patchIds": [
+        "pe-cjk-section",
+        "pe-section-count",
+        "pe-image-size",
+        "pe-code-size",
+        "glyph-allocation-retry",
+        "utf8-defer-advance",
+        "utf8-control-sequence",
+        "utf8-accepted-character",
+        "utf8-newline-advance",
+        "utf8-narrow-line-progress",
+        "batch-rebuild-stub",
+        "atlas-clear-stub",
+        "batch-rebuild-hook",
+        "atlas-clear-hook",
+        "atlas-copy-live-glyphs"
+      ],
+      "fileLength": 12144640
+    }
+  ]
+}

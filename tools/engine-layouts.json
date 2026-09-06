@@ -1,0 +1,418 @@
+[
+  {
+    "version": "1.20.4.6074",
+    "label": "1.20e",
+    "originalSha256": "6B5B406861A56449C604C15CF0971DF7D6D26F679EFF7AA69A34946C7D91764B",
+    "fileLength": 9375804,
+    "family": "frame-pointer",
+    "retry": 923330,
+    "retryTarget": 923141,
+    "utf8": [
+      934656,
+      934748,
+      934879,
+      934899,
+      934913
+    ],
+    "batchHook": 933186,
+    "render": 931616,
+    "rebuild": 918960,
+    "atlasHook": 928871,
+    "atlasCopy": 928961,
+    "memset": 0,
+    "placement": "text-tail",
+    "batchStub": 7359408,
+    "atlasStub": 7359472,
+    "anchors": [
+      {
+        "rva": 923291,
+        "size": 63,
+        "normalizedSha256": "DBB89649BF2696B1A6239107BEA2E24729AD58E2A11B030BCA945287786BE8D9"
+      },
+      {
+        "rva": 934584,
+        "size": 334,
+        "normalizedSha256": "91980073FA06730DEFDED803959FFA2690970882BB064F1336E72B524068DE88"
+      },
+      {
+        "rva": 933163,
+        "size": 55,
+        "normalizedSha256": "8ED9846905A90EAFC3E66B4AD03860F5186F2E950DB4B2452D42A73833A23385"
+      },
+      {
+        "rva": 928840,
+        "size": 127,
+        "normalizedSha256": "6D9B0E736BFF2B84B50AC12B752C26A42BEF6705745080F7775473A78D0CF56C"
+      },
+      {
+        "rva": 918960,
+        "size": 94,
+        "normalizedSha256": "3A24248804845171A683AF2648ED362074BF7E70E318DA5C3451570C8B289AD9"
+      }
+    ]
+  },
+  {
+    "version": "1.21.0.6263",
+    "label": "1.21",
+    "originalSha256": "3265E78DD68B1AB6C54957409E472C077F9FE2ABCCE4CFD279E56AF66A6EF6F3",
+    "fileLength": 9375804,
+    "family": "frame-pointer",
+    "retry": 923330,
+    "retryTarget": 923141,
+    "utf8": [
+      934656,
+      934748,
+      934879,
+      934899,
+      934913
+    ],
+    "batchHook": 933186,
+    "render": 931616,
+    "rebuild": 918960,
+    "atlasHook": 928871,
+    "atlasCopy": 928961,
+    "memset": 0,
+    "placement": "new-section",
+    "batchStub": 9584640,
+    "atlasStub": 9584704,
+    "anchors": [
+      {
+        "rva": 923291,
+        "size": 63,
+        "normalizedSha256": "DBB89649BF2696B1A6239107BEA2E24729AD58E2A11B030BCA945287786BE8D9"
+      },
+      {
+        "rva": 934584,
+        "size": 334,
+        "normalizedSha256": "91980073FA06730DEFDED803959FFA2690970882BB064F1336E72B524068DE88"
+      },
+      {
+        "rva": 933163,
+        "size": 55,
+        "normalizedSha256": "8ED9846905A90EAFC3E66B4AD03860F5186F2E950DB4B2452D42A73833A23385"
+      },
+      {
+        "rva": 928840,
+        "size": 127,
+        "normalizedSha256": "6D9B0E736BFF2B84B50AC12B752C26A42BEF6705745080F7775473A78D0CF56C"
+      },
+      {
+        "rva": 918960,
+        "size": 94,
+        "normalizedSha256": "3A24248804845171A683AF2648ED362074BF7E70E318DA5C3451570C8B289AD9"
+      }
+    ]
+  },
+  {
+    "version": "1.22.0.6328",
+    "label": "1.22",
+    "originalSha256": "5F866BD8A45951CD2C4B22B1C80A0329246DBED847540C85430376E8C4310C84",
+    "fileLength": 11956224,
+    "family": "fpo",
+    "retry": 8080297,
+    "retryTarget": 8080204,
+    "utf8": [
+      8083572,
+      8083658,
+      8083839,
+      8083861,
+      8083879
+    ],
+    "batchHook": 8082579,
+    "render": 8081424,
+    "rebuild": 8086128,
+    "atlasHook": 8064049,
+    "atlasCopy": 8064155,
+    "memset": 8192242,
+    "placement": "text-tail",
+    "batchStub": 8763216,
+    "atlasStub": 8763280,
+    "anchors": [
+      {
+        "rva": 8080260,
+        "size": 59,
+        "normalizedSha256": "8B593BE9F3F312DE84C9369E7676C0224F987B726776C50C7690E44B39ED6272"
+      },
+      {
+        "rva": 8083232,
+        "size": 653,
+        "normalizedSha256": "6380E3573828C83EEC6CA0279839CF8F400BD7142256F4FAFCB1FA31DC9236D2"
+      },
+      {
+        "rva": 8082558,
+        "size": 51,
+        "normalizedSha256": "C6C2D602FBB9C435128D08EB037DAC00671D78C23B953E7A96878DCB647B48E8"
+      },
+      {
+        "rva": 8064018,
+        "size": 344,
+        "normalizedSha256": "0C03011EEEE9D3BBF1B112419E639D0BFADA6092312BC959EC275190742C4C26"
+      },
+      {
+        "rva": 8086128,
+        "size": 143,
+        "normalizedSha256": "353740B18078A1108770FF3CC3A48AE66E507A3697A94DDF2CCD28409BF88F2D"
+      }
+    ]
+  },
+  {
+    "version": "1.23.0.6352",
+    "label": "1.23",
+    "originalSha256": "EE6175947A8792CD672253B37DEB4C5D0577E4E145FFD90FED9021C64C31AE1E",
+    "fileLength": 12062720,
+    "family": "fpo",
+    "retry": 8089897,
+    "retryTarget": 8089804,
+    "utf8": [
+      8093172,
+      8093258,
+      8093439,
+      8093461,
+      8093479
+    ],
+    "batchHook": 8092179,
+    "render": 8091024,
+    "rebuild": 8095728,
+    "atlasHook": 8073649,
+    "atlasCopy": 8073755,
+    "memset": 8201842,
+    "placement": "text-tail",
+    "batchStub": 8845056,
+    "atlasStub": 8845120,
+    "anchors": [
+      {
+        "rva": 8089860,
+        "size": 59,
+        "normalizedSha256": "8B593BE9F3F312DE84C9369E7676C0224F987B726776C50C7690E44B39ED6272"
+      },
+      {
+        "rva": 8092832,
+        "size": 653,
+        "normalizedSha256": "6380E3573828C83EEC6CA0279839CF8F400BD7142256F4FAFCB1FA31DC9236D2"
+      },
+      {
+        "rva": 8092158,
+        "size": 51,
+        "normalizedSha256": "C6C2D602FBB9C435128D08EB037DAC00671D78C23B953E7A96878DCB647B48E8"
+      },
+      {
+        "rva": 8073618,
+        "size": 344,
+        "normalizedSha256": "0C03011EEEE9D3BBF1B112419E639D0BFADA6092312BC959EC275190742C4C26"
+      },
+      {
+        "rva": 8095728,
+        "size": 143,
+        "normalizedSha256": "353740B18078A1108770FF3CC3A48AE66E507A3697A94DDF2CCD28409BF88F2D"
+      }
+    ]
+  },
+  {
+    "version": "1.24.1.6374",
+    "label": "1.24b",
+    "originalSha256": "EE23DD7795EA82DDFC292FDD2A05D5A76D3ABEF801CEC01F0EFF68F521DF0441",
+    "fileLength": 12140544,
+    "family": "fpo",
+    "retry": 8151897,
+    "retryTarget": 8151804,
+    "utf8": [
+      8155172,
+      8155258,
+      8155439,
+      8155461,
+      8155479
+    ],
+    "batchHook": 8154179,
+    "render": 8153024,
+    "rebuild": 8157728,
+    "atlasHook": 8135649,
+    "atlasCopy": 8135755,
+    "memset": 8263842,
+    "placement": "text-tail",
+    "batchStub": 8908544,
+    "atlasStub": 8908608,
+    "anchors": [
+      {
+        "rva": 8151860,
+        "size": 59,
+        "normalizedSha256": "8B593BE9F3F312DE84C9369E7676C0224F987B726776C50C7690E44B39ED6272"
+      },
+      {
+        "rva": 8154832,
+        "size": 653,
+        "normalizedSha256": "6380E3573828C83EEC6CA0279839CF8F400BD7142256F4FAFCB1FA31DC9236D2"
+      },
+      {
+        "rva": 8154158,
+        "size": 51,
+        "normalizedSha256": "C6C2D602FBB9C435128D08EB037DAC00671D78C23B953E7A96878DCB647B48E8"
+      },
+      {
+        "rva": 8135618,
+        "size": 344,
+        "normalizedSha256": "0C03011EEEE9D3BBF1B112419E639D0BFADA6092312BC959EC275190742C4C26"
+      },
+      {
+        "rva": 8157728,
+        "size": 143,
+        "normalizedSha256": "353740B18078A1108770FF3CC3A48AE66E507A3697A94DDF2CCD28409BF88F2D"
+      }
+    ]
+  },
+  {
+    "version": "1.24.4.6387",
+    "label": "1.24e",
+    "originalSha256": "5F7D8B25005BC12F8453839474EB37ADE8869ABA0570EAD2B76B6A7979C904CC",
+    "fileLength": 12140544,
+    "family": "fpo",
+    "retry": 8152089,
+    "retryTarget": 8151996,
+    "utf8": [
+      8155364,
+      8155450,
+      8155631,
+      8155653,
+      8155671
+    ],
+    "batchHook": 8154371,
+    "render": 8153216,
+    "rebuild": 8157920,
+    "atlasHook": 8135841,
+    "atlasCopy": 8135947,
+    "memset": 8264034,
+    "placement": "new-section",
+    "batchStub": 12402688,
+    "atlasStub": 12402752,
+    "anchors": [
+      {
+        "rva": 8152052,
+        "size": 59,
+        "normalizedSha256": "8B593BE9F3F312DE84C9369E7676C0224F987B726776C50C7690E44B39ED6272"
+      },
+      {
+        "rva": 8155024,
+        "size": 653,
+        "normalizedSha256": "6380E3573828C83EEC6CA0279839CF8F400BD7142256F4FAFCB1FA31DC9236D2"
+      },
+      {
+        "rva": 8154350,
+        "size": 51,
+        "normalizedSha256": "C6C2D602FBB9C435128D08EB037DAC00671D78C23B953E7A96878DCB647B48E8"
+      },
+      {
+        "rva": 8135810,
+        "size": 344,
+        "normalizedSha256": "0C03011EEEE9D3BBF1B112419E639D0BFADA6092312BC959EC275190742C4C26"
+      },
+      {
+        "rva": 8157920,
+        "size": 143,
+        "normalizedSha256": "353740B18078A1108770FF3CC3A48AE66E507A3697A94DDF2CCD28409BF88F2D"
+      }
+    ]
+  },
+  {
+    "version": "1.25.1.6397",
+    "label": "1.25b",
+    "originalSha256": "F504ED38F43BCCF011BF55DC8339EFACD689F4DCD6AF4AFD1815F01B5D026D07",
+    "fileLength": 12042240,
+    "family": "fpo",
+    "retry": 8149577,
+    "retryTarget": 8149484,
+    "utf8": [
+      8152852,
+      8152938,
+      8153119,
+      8153141,
+      8153159
+    ],
+    "batchHook": 8151859,
+    "render": 8150704,
+    "rebuild": 8155408,
+    "atlasHook": 8133329,
+    "atlasCopy": 8133435,
+    "memset": 8261522,
+    "placement": "text-tail",
+    "batchStub": 8832000,
+    "atlasStub": 8832064,
+    "anchors": [
+      {
+        "rva": 8149540,
+        "size": 59,
+        "normalizedSha256": "8B593BE9F3F312DE84C9369E7676C0224F987B726776C50C7690E44B39ED6272"
+      },
+      {
+        "rva": 8152512,
+        "size": 653,
+        "normalizedSha256": "6380E3573828C83EEC6CA0279839CF8F400BD7142256F4FAFCB1FA31DC9236D2"
+      },
+      {
+        "rva": 8151838,
+        "size": 51,
+        "normalizedSha256": "C6C2D602FBB9C435128D08EB037DAC00671D78C23B953E7A96878DCB647B48E8"
+      },
+      {
+        "rva": 8133298,
+        "size": 344,
+        "normalizedSha256": "0C03011EEEE9D3BBF1B112419E639D0BFADA6092312BC959EC275190742C4C26"
+      },
+      {
+        "rva": 8155408,
+        "size": 143,
+        "normalizedSha256": "353740B18078A1108770FF3CC3A48AE66E507A3697A94DDF2CCD28409BF88F2D"
+      }
+    ]
+  },
+  {
+    "version": "1.26.0.6401",
+    "label": "1.26",
+    "originalSha256": "6D21BD9A0F9FBC8446F455C9E89AC994FED68174426FE608FCB9BAEFD4DEC53C",
+    "fileLength": 12042240,
+    "family": "fpo",
+    "retry": 8150137,
+    "retryTarget": 8150044,
+    "utf8": [
+      8153412,
+      8153498,
+      8153679,
+      8153701,
+      8153719
+    ],
+    "batchHook": 8152419,
+    "render": 8151264,
+    "rebuild": 8155968,
+    "atlasHook": 8133889,
+    "atlasCopy": 8133995,
+    "memset": 8262082,
+    "placement": "text-tail",
+    "batchStub": 8832528,
+    "atlasStub": 8832592,
+    "anchors": [
+      {
+        "rva": 8150100,
+        "size": 59,
+        "normalizedSha256": "8B593BE9F3F312DE84C9369E7676C0224F987B726776C50C7690E44B39ED6272"
+      },
+      {
+        "rva": 8153072,
+        "size": 653,
+        "normalizedSha256": "6380E3573828C83EEC6CA0279839CF8F400BD7142256F4FAFCB1FA31DC9236D2"
+      },
+      {
+        "rva": 8152398,
+        "size": 51,
+        "normalizedSha256": "C6C2D602FBB9C435128D08EB037DAC00671D78C23B953E7A96878DCB647B48E8"
+      },
+      {
+        "rva": 8133858,
+        "size": 344,
+        "normalizedSha256": "0C03011EEEE9D3BBF1B112419E639D0BFADA6092312BC959EC275190742C4C26"
+      },
+      {
+        "rva": 8155968,
+        "size": 143,
+        "normalizedSha256": "353740B18078A1108770FF3CC3A48AE66E507A3697A94DDF2CCD28409BF88F2D"
+      }
+    ]
+  }
+]

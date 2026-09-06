@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "war3-1.20.4.6074",
+  "gameVersion": "1.20.4.6074",
+  "currentRevision": 2,
+  "fileLength": 9375804,
+  "originalSha256": "6B5B406861A56449C604C15CF0971DF7D6D26F679EFF7AA69A34946C7D91764B",
+  "backupFileName": "Game.dll.before-fontfix-12046074.bak",
+  "patches": [
+    {
+      "id": "glyph-allocation-retry",
+      "fileOffset": 923330,
+      "rva": 923330,
+      "original": "0F84B5000000",
+      "replacement": "0F843DFFFFFF"
+    },
+    {
+      "id": "utf8-defer-advance",
+      "fileOffset": 934656,
+      "rva": 934656,
+      "original": "7502",
+      "replacement": "EB02"
+    },
+    {
+      "id": "utf8-control-sequence",
+      "fileOffset": 934748,
+      "rva": 934748,
+      "original": "0F8482000000",
+      "replacement": "909090909090"
+    },
+    {
+      "id": "utf8-accepted-character",
+      "fileOffset": 934879,
+      "rva": 934879,
+      "original": "7403",
+      "replacement": "9090"
+    },
+    {
+      "id": "utf8-newline-advance",
+      "fileOffset": 934899,
+      "rva": 934899,
+      "original": "7411",
+      "replacement": "9090"
+    },
+    {
+      "id": "utf8-narrow-line-progress",
+      "fileOffset": 934913,
+      "rva": 934913,
+      "original": "7403",
+      "replacement": "9090"
+    },
+    {
+      "id": "batch-rebuild-stub",
+      "fileOffset": 7359408,
+      "rva": 7359408,
+      "original": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "replacement": "9C608BF98B772485F67E2483BE80000000007411C78680000000000000008BCEE8DBB99DFF8B471C03C68B7004EBD8619DE93AEB9DFF"
+    },
+    {
+      "id": "atlas-clear-stub",
+      "fileOffset": 7359472,
+      "rva": 7359472,
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "9C60FC33C0B9000001008B7B04F3AB619D8BB0B0010000E961E09DFF"
+    },
+    {
+      "id": "batch-rebuild-hook",
+      "fileOffset": 933186,
+      "rva": 933186,
+      "original": "E8D9F9FFFF",
+      "replacement": "E8690E6200"
+    },
+    {
+      "id": "atlas-clear-hook",
+      "fileOffset": 928871,
+      "rva": 928871,
+      "original": "8BB0B0010000",
+      "replacement": "E9841F620090"
+    },
+    {
+      "id": "atlas-copy-live-glyphs",
+      "fileOffset": 928961,
+      "rva": 928961,
+      "original": "0F840C010000",
+      "replacement": "909090909090"
+    }
+  ],
+  "revisions": [
+    {
+      "revision": 2,
+      "sha256": "4740FD87318724ECA050D18B5F2B071E7AE6DB97783D3FF4292275EBD5B55942",
+      "patchIds": [
+        "glyph-allocation-retry",
+        "utf8-defer-advance",
+        "utf8-control-sequence",
+        "utf8-accepted-character",
+        "utf8-newline-advance",
+        "utf8-narrow-line-progress",
+        "batch-rebuild-stub",
+        "atlas-clear-stub",
+        "batch-rebuild-hook",
+        "atlas-clear-hook",
+        "atlas-copy-live-glyphs"
+      ]
+    }
+  ]
+}

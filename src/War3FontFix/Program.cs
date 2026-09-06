@@ -41,10 +41,10 @@ namespace War3FontFix
                             foreach (var profile in catalog.Profiles)
                             {
                                 Console.WriteLine("Warcraft III " + profile.gameVersion + " / current patch revision " + profile.currentRevision);
-                                Console.WriteLine("Length: " + profile.fileLength);
+                                Console.WriteLine("Original length: " + profile.fileLength);
                                 Console.WriteLine("Original SHA-256: " + profile.originalSha256);
                                 foreach (var revision in profile.revisions)
-                                    Console.WriteLine("Revision " + revision.revision + " SHA-256: " + revision.sha256);
+                                    Console.WriteLine("Revision " + revision.revision + " length: " + profile.RevisionLength(revision) + "; SHA-256: " + revision.sha256);
                             }
                             return 0;
                     }

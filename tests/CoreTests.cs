@@ -182,6 +182,26 @@ internal static class CoreTests
                 Check(f.Service.SelfTest(f.Target).StartsWith("PASS"), "self-test");
                 Check(Directory.GetFiles(f.DirectoryPath).Length == 1, "read-only operation wrote files");
             });
+            Test("appended section: exact upgrade, restore, tamper rejection and disk truncation", f => {
+                byte[] expanded = new byte[256]; Buffer.BlockCopy(f.Current, 0, expanded, 0, f.Current.Length);
+                expanded[192] = 0xC3;
+                f.Profile.schemaVersion = 2;
+                f.Profile.patches = f.Profile.patches.Concat(new[] { new PatchSite { id = "section", fileOffset = 192, rva = 12288, original = "00", replacement = "C3" } }).ToArray();
+                f.Profile.Current.fileLength = expanded.Length;
+                f.Profile.Current.patchIds = new[] { "first", "second", "section" };
+                f.Profile.Current.sha256 = Bytes.Hash(expanded); f.Profile.Validate();
+                Check(PatchEngine.Apply(f.Legacy, f.Profile).SequenceEqual(expanded), "expanded upgrade");
+                Check(PatchEngine.Restore(expanded, f.Profile).SequenceEqual(f.Original), "original overlay preserved");
+                byte[] tampered = (byte[])expanded.Clone(); tampered[200] = 1;
+                Throws<UnsupportedFileException>(() => PatchEngine.Restore(tampered, f.Profile));
+                Check(f.Profile.Identify(Bytes.Hash(expanded), 128) == -1, "wrong revision length accepted");
+                f.Service.Change(f.DirectoryPath, true);
+                Check(File.ReadAllBytes(f.Target).SequenceEqual(expanded), "expanded disk file");
+                File.Delete(f.Backup); f.Service.Change(f.DirectoryPath, false);
+                Check(File.ReadAllBytes(f.Target).SequenceEqual(f.Original), "disk truncate and restore");
+                f.Profile.patches[2].original = "01";
+                Throws<InvalidDataException>(f.Profile.Validate);
+            });
             var catalog = PatchCatalog.Embedded(Assembly.GetExecutingAssembly());
             Check(catalog.Profiles.Length > 0, "embedded profiles missing");
             Console.WriteLine("PASS embedded production profiles validate (no copyrighted game file needed)");

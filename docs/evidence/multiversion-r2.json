@@ -1,0 +1,2204 @@
+{
+  "installerVersion": "2.1.0",
+  "resolution": [
+    3120,
+    2080
+  ],
+  "renderer": "Direct3D 8",
+  "rasterizedFontPixels": 32,
+  "method": "Render-thread diagnostic in a cold-start patched game. Fixed/original/fixed A/B switches only allocation and UTF-8 layout sites; batch and atlas fixes stay enabled. This is not a full stock-DLL baseline or a long-session acceptance test.",
+  "versions": [
+    {
+      "label": "1.20e",
+      "version": "1.20.4.6074",
+      "originalSha256": "6B5B406861A56449C604C15CF0971DF7D6D26F679EFF7AA69A34946C7D91764B",
+      "patchedSha256": "4740FD87318724ECA050D18B5F2B071E7AE6DB97783D3FF4292275EBD5B55942",
+      "scene": "LAN menu",
+      "coldStartAfterConverter": true,
+      "normalExit": true,
+      "placement": "text-tail",
+      "stubProtection": "r-x",
+      "pressure": [
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        },
+        {
+          "fixed": false,
+          "supported": 1800,
+          "failures": 227
+        },
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        }
+      ],
+      "wrap": [
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 90,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 35,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 100,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        }
+      ],
+      "renderCounters": {
+        "batch": 0,
+        "atlas": 11
+      }
+    },
+    {
+      "label": "1.21",
+      "version": "1.21.0.6263",
+      "originalSha256": "3265E78DD68B1AB6C54957409E472C077F9FE2ABCCE4CFD279E56AF66A6EF6F3",
+      "patchedSha256": "8554C02E37DD02E5FC95A00055D8CF73BD48B127B6511C703E75B31DD2221E58",
+      "scene": "Booty Bay / attack tooltip",
+      "coldStartAfterConverter": true,
+      "normalExit": true,
+      "placement": "new-section",
+      "stubProtection": "r-x",
+      "pressure": [
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        },
+        {
+          "fixed": false,
+          "supported": 1800,
+          "failures": 294
+        },
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        }
+      ],
+      "wrap": [
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 90,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 35,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 100,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        }
+      ],
+      "renderCounters": {
+        "batch": 3582,
+        "atlas": 6
+      }
+    },
+    {
+      "label": "1.22",
+      "version": "1.22.0.6328",
+      "originalSha256": "5F866BD8A45951CD2C4B22B1C80A0329246DBED847540C85430376E8C4310C84",
+      "patchedSha256": "BDB926D9B01189FD329E9814B7F5A110E68C3CB6302C264790431DB78E06A27C",
+      "scene": "LAN menu",
+      "coldStartAfterConverter": true,
+      "normalExit": true,
+      "placement": "text-tail",
+      "stubProtection": "r-x",
+      "pressure": [
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        },
+        {
+          "fixed": false,
+          "supported": 1800,
+          "failures": 227
+        },
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        }
+      ],
+      "wrap": [
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 90,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 35,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 100,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        }
+      ],
+      "renderCounters": {
+        "batch": 0,
+        "atlas": 11
+      }
+    },
+    {
+      "label": "1.23",
+      "version": "1.23.0.6352",
+      "originalSha256": "EE6175947A8792CD672253B37DEB4C5D0577E4E145FFD90FED9021C64C31AE1E",
+      "patchedSha256": "529734F41002F4FDD372C272F58EF38E6982EB7FA284B9B9913ECB6A3446DF2C",
+      "scene": "LAN menu",
+      "coldStartAfterConverter": true,
+      "normalExit": true,
+      "placement": "text-tail",
+      "stubProtection": "r-x",
+      "pressure": [
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        },
+        {
+          "fixed": false,
+          "supported": 1800,
+          "failures": 227
+        },
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        }
+      ],
+      "wrap": [
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 90,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 35,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 100,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        }
+      ],
+      "renderCounters": {
+        "batch": 0,
+        "atlas": 11
+      }
+    },
+    {
+      "label": "1.24b",
+      "version": "1.24.1.6374",
+      "originalSha256": "EE23DD7795EA82DDFC292FDD2A05D5A76D3ABEF801CEC01F0EFF68F521DF0441",
+      "patchedSha256": "1A615BA5FF62B18626CF22091FB9721C3D13A39B0FC60AA38E3C4B352210E6FC",
+      "scene": "LAN menu",
+      "coldStartAfterConverter": true,
+      "normalExit": true,
+      "placement": "text-tail",
+      "stubProtection": "r-x",
+      "pressure": [
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        },
+        {
+          "fixed": false,
+          "supported": 1800,
+          "failures": 227
+        },
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        }
+      ],
+      "wrap": [
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 90,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 35,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 100,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        }
+      ],
+      "renderCounters": {
+        "batch": 0,
+        "atlas": 11
+      }
+    },
+    {
+      "label": "1.24e",
+      "version": "1.24.4.6387",
+      "originalSha256": "5F7D8B25005BC12F8453839474EB37ADE8869ABA0570EAD2B76B6A7979C904CC",
+      "patchedSha256": "FD9773CAC34EB6BA2200823B9E9ECBD447177C8FE330844C0EC1D54B84FA5423",
+      "scene": "IMBA 3.86b AI / Purification learning tooltip",
+      "coldStartAfterConverter": true,
+      "normalExit": true,
+      "placement": "new-section",
+      "stubProtection": "r-x",
+      "pressure": [
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        },
+        {
+          "fixed": false,
+          "supported": 1800,
+          "failures": 205
+        },
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        }
+      ],
+      "wrap": [
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "cjk",
+          "count": 31,
+          "consumed": 96,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "latin",
+          "count": 35,
+          "consumed": 36,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "color",
+          "count": 31,
+          "consumed": 106,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "cjk",
+          "count": 31,
+          "consumed": 93,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "latin",
+          "count": 35,
+          "consumed": 35,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "color",
+          "count": 31,
+          "consumed": 103,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "cjk",
+          "count": 31,
+          "consumed": 93,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "latin",
+          "count": 35,
+          "consumed": 35,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "color",
+          "count": 31,
+          "consumed": 103,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "cjk",
+          "count": 31,
+          "consumed": 93,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "latin",
+          "count": 35,
+          "consumed": 35,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "color",
+          "count": 31,
+          "consumed": 103,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        }
+      ],
+      "renderCounters": {
+        "batch": 1967,
+        "atlas": 5
+      }
+    },
+    {
+      "label": "1.25b",
+      "version": "1.25.1.6397",
+      "originalSha256": "F504ED38F43BCCF011BF55DC8339EFACD689F4DCD6AF4AFD1815F01B5D026D07",
+      "patchedSha256": "77BB9CBA5EA090775D02995003BADE493707E4D987B08DF2AE93B8B0B95CEB98",
+      "scene": "LAN menu",
+      "coldStartAfterConverter": true,
+      "normalExit": true,
+      "placement": "text-tail",
+      "stubProtection": "r-x",
+      "pressure": [
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        },
+        {
+          "fixed": false,
+          "supported": 1800,
+          "failures": 227
+        },
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        }
+      ],
+      "wrap": [
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 90,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 35,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 100,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        }
+      ],
+      "renderCounters": {
+        "batch": 0,
+        "atlas": 11
+      }
+    },
+    {
+      "label": "1.26",
+      "version": "1.26.0.6401",
+      "originalSha256": "6D21BD9A0F9FBC8446F455C9E89AC994FED68174426FE608FCB9BAEFD4DEC53C",
+      "patchedSha256": "242E412E56A9E8D6285F130C51DDECD1DBAA5BC9DE2E37277F20ACFD02E26C0B",
+      "scene": "IMBA 3.86b AI / Purification learning tooltip",
+      "coldStartAfterConverter": true,
+      "normalExit": true,
+      "placement": "text-tail",
+      "stubProtection": "r-x",
+      "pressure": [
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        },
+        {
+          "fixed": false,
+          "supported": 1800,
+          "failures": 228
+        },
+        {
+          "fixed": true,
+          "supported": 1800,
+          "failures": 0
+        }
+      ],
+      "wrap": [
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 90,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 35,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 100,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 0,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": false,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "cjk",
+          "count": 29,
+          "consumed": 87,
+          "total": 180,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "latin",
+          "count": 34,
+          "consumed": 34,
+          "total": 190,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "color",
+          "count": 29,
+          "consumed": 97,
+          "total": 192,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "newline",
+          "count": 2,
+          "consumed": 8,
+          "total": 14,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "narrow",
+          "count": 0,
+          "consumed": 3,
+          "total": 6,
+          "progress": true,
+          "bounded": true
+        },
+        {
+          "mode": 1,
+          "fixed": true,
+          "name": "empty",
+          "count": 0,
+          "consumed": 0,
+          "total": 0,
+          "progress": true,
+          "bounded": true
+        }
+      ],
+      "renderCounters": {
+        "batch": 1813,
+        "atlas": 7
+      }
+    }
+  ]
+}

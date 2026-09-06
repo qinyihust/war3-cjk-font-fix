@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.1.0
+
+- Adapt eight exact builds from 1.20e through 1.26 with a shared, deterministic profile generator and reviewed instruction anchors.
+- Preserve the released 1.25b revision-2 DLL fingerprint and revision-1 migration path.
+- Add a separate read/execute PE section for 1.21 and 1.24e, with exact original-file restoration including overlays.
+- Extend fingerprint validation to revision-specific file lengths; retain unknown-file rejection and distinct per-build backups.
+- Execute native stub tests for every embedded profile, and add appended-section upgrade/restore/tamper tests.
+- Generalize the read-only PE verifier and document version-converter use, porting constraints, and per-build validation limits.
+
 ## 2.0.0
 
 First repository-oriented public release, using patch-data revision 2.

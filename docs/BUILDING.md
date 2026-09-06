@@ -57,7 +57,7 @@ python tools/verify_patch.py "C:\Games\Warcraft III\Game.dll"
 .\scripts\package.ps1
 ```
 
-This creates `artifacts/release/war3-cjk-font-fix-v2.0.0-windows.zip` and a `.sha256` sidecar. The archive contains both user executables, documentation, license, profile definitions, and internal checksums. Test executables, complete game files, local evidence, and debug tools are excluded.
+This creates `artifacts/release/war3-cjk-font-fix-v2.1.0-windows.zip` and a `.sha256` sidecar. The archive contains both user executables, documentation, license, profile definitions, and internal checksums. Test executables, complete game files, private evidence, and debug tools are excluded.
 
 Each script accepts an output/build directory override; use `Get-Help .\scripts\build.ps1` and the script's parameter block for names. Build and test steps can also be run in GitHub Actions. CI artifacts are build outputs, not automatically published Releases.
 

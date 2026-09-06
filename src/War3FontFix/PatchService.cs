@@ -146,7 +146,7 @@ namespace War3FontFix
             bool rejected = false;
             try { PatchEngine.Apply(unknown, profile); } catch (UnsupportedFileException) { rejected = true; }
             if (!rejected) throw new InvalidDataException("Unknown-file rejection failed.");
-            int changed = 0;
+            int changed = patched.Length - original.Length;
             for (int i = 0; i < original.Length; i++) if (original[i] != patched[i]) changed++;
             return String.Format("PASS: {0}, revision {1}, {2} changed bytes; exact hashes, round-trip restoration, unknown-file rejection. No files were changed.",
                 profile.gameVersion, profile.currentRevision, changed);
