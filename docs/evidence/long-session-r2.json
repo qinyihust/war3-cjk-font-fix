@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-06",
+  "gameVersion": "1.25.1.6397",
+  "patchRevision": 2,
+  "patchedDllSha256": "77BB9CBA5EA090775D02995003BADE493707E4D987B08DF2AE93B8B0B95CEB98",
+  "durationSeconds": 2748.545,
+  "resolution": [
+    3120,
+    2080
+  ],
+  "renderer": "Direct3D 8",
+  "map": "IMBA 3.86b AI",
+  "aiCount": 9,
+  "aiDifficulty": "medium",
+  "hero": "Omniknight",
+  "heroFinalLevel": 4,
+  "observedHeroDeaths": 3,
+  "windowModeSwitches": 0,
+  "debuggerAttached": false,
+  "memoryPatchedDuringAcceptance": false,
+  "normalExitViaMenu": true,
+  "matchingSamples": 91,
+  "workingSetBytes": {
+    "first": 414113792,
+    "last": 329830400,
+    "min": 310403072,
+    "max": 476549120
+  },
+  "privateBytes": {
+    "first": 413855744,
+    "last": 534626304,
+    "min": 413855744,
+    "max": 534626304
+  },
+  "handles": {
+    "first": 5239,
+    "last": 5163,
+    "min": 5155,
+    "max": 5257
+  },
+  "threads": {
+    "first": 60,
+    "last": 60,
+    "min": 59,
+    "max": 63
+  },
+  "newGameErrorFilesCount": 0,
+  "result": "passed_for_documented_environment",
+  "scope": "Periodic visual inspection of skills, items, help pages, static labels, deaths/respawns and level change while 9 AIs fought. No frame-by-frame capture or FPS benchmark; no claim of leak-free operation or compatibility with other builds."
+}
