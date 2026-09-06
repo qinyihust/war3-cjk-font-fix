@@ -1,7 +1,9 @@
 # 经典版 Warcraft III 高分辨率中文渲染故障分析与修复技术报告
 
-日期：2026-09-06  
-对应实现：安装器 v2.1.0、补丁数据修订版 2  
+日期：2026-09-06
+
+对应实现：安装器 v2.1.0、补丁数据修订版 2
+
 实现基线：[`ba4d8a3`](https://github.com/qinyihust/war3-cjk-font-fix/commit/ba4d8a340d48ca77bb50d4e2bb2e3c8227e0f2be)
 
 ## 摘要
