@@ -54,7 +54,7 @@ Run these commands from a source checkout. The Windows release archive does not 
 
 Default tests use synthetic files and embedded x86 stubs; no game files are required. Optional full-file tests read your local DLL and modify temporary copies only.
 
-Further documentation: [building/testing](docs/BUILDING.md), [root-cause analysis](docs/ARCHITECTURE.md), [porting](docs/PORTING.md), [contributing](CONTRIBUTING.md), and [changelog](CHANGELOG.md).
+Further documentation: [technical report (Chinese)](docs/TECHNICAL_REPORT.md), [building/testing](docs/BUILDING.md), [root-cause analysis](docs/ARCHITECTURE.md), [porting](docs/PORTING.md), [contributing](CONTRIBUTING.md), and [changelog](CHANGELOG.md).
 
 ## License
 
